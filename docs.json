@@ -7,7 +7,7 @@
     "light": "#800080",
     "dark": "#800080"
   },
-  "favicon": "haunt.jpg",
+  "favicon": "favicon.svg",
   "navigation": {
     "tabs": [
       {
