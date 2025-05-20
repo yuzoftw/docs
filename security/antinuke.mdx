@@ -1,0 +1,115 @@
+---
+title: 'Antinuke'
+description: 'Impose restrictions on moderators to prevent destructive behavior.'
+icon: 'fingerprint'
+---
+
+## Why use an antinuke system?
+
+It's important to have an antinuke system in place to prevent moderators from abusing their permissions. This is a security measure which lets your server stay safe from any harmful actions.
+
+
+### How does the antinuke work?
+
+
+The antinuke system will prevent unwhitelisted members from making potentially harmful changes to your server. Any unauthorized attempts to modify server settings will result in immediate action against the responsible user.
+
+
+
+## How to enable antinuke?
+
+
+<CodeGroup>
+
+```javascript Syntax
+?antinuke enable
+```
+
+```javascript Example
+?antinuke enable
+```
+
+</CodeGroup>
+
+
+## How to enable antinuke?
+You can exempt users from the antinuke with the `antinuke whitelist` command.
+
+<Warning>
+This is a dangerous command and will allow the user to bypass the antinuke entirely.
+</Warning>
+
+<CodeGroup>
+
+```javascript Syntax
+?antinuke whitelist add <user>
+?antinuke whitelist remove <user>
+```
+
+```javascript Example
+?antinuke whitelist add @termed 
+?antinuke whitelist remove @termed
+```
+
+</CodeGroup>
+
+
+## Enabling an antinuke module
+
+Only the server owner & extra owners can enable or disable specific antinuke modules.
+
+<CodeGroup>
+
+```javascript Syntax
+?antinuke module
+```
+
+```javascript Example
+?antinuke module
+```
+
+</CodeGroup>
+
+
+## Available antinuke modules
+
+<Accordion title="Prevents members from changing the vanity URL">
+  You can prevent members from changing the vanity URL with the following module.
+  <Warning>
+  Nyixe can not change the vanity URL back to the original due to Discord limitations.
+  </Warning>
+</Accordion>
+<Accordion title="Prevents members from being banned">
+  You can prevent members from being mass banned with the following module.
+</Accordion>
+<Accordion title="Prevents members from being kicked">
+  You can prevent members from being mass kicked with the following module.
+</Accordion>
+<Accordion title="Prevents bots from being kicked">
+  You can prevent bots from being mass added with the following module.
+</Accordion>
+<Accordion title="Prevents roles from being created/deleted/updated">
+  You can prevent roles from being mass deleted/deleted/updated with the following module.
+</Accordion>
+<Accordion title="Prevents channels from being created/deleted/updated">
+  You can prevent channels from being mass deleted/deleted/updated with the following module.
+</Accordion>
+<Accordion title="Prevents emoji or stickers from being created/deleted/updated">
+  You can prevent emoji or sticker from being mass deleted/deleted/updated with the following module.
+</Accordion>
+<Accordion title="Prevent guild from being updated">
+  You can prevent guild from being mass updated with the following module.
+</Accordion>
+<Accordion title="Prevent mass pings in the guild">
+  You can prevent mass pings with the following module.
+</Accordion>
+
+
+## Viewing the antinuke configuration
+You can use the `?antinuke config` command to view the current antinuke configuration.
+
+## Viewing the antinuke whitelisted users
+You can use the `?antinuke whitelist list` command to view the current antinuke whitelisted users.
+
+
+
