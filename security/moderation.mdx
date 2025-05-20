@@ -1,0 +1,48 @@
+---
+title: 'Moderation'
+description: 'Guide to setting up moderation commands in your server.'
+icon: 'hammer'
+---
+
+
+# Overview
+Moderation commands require some basic setup before they can be used. This includes **moderation logs** and the **jailed role & channel**.
+
+<Steps>
+  <Step title="Creating the case logs & jail role">
+    <Info>
+    Jail is a feature similar to mute, but it restricts users from all channels except #jail.
+    </Info>
+    Use the `?setup` command to create the case logs channel and jail role.
+  </Step>
+</Steps>
+
+Upon completion of the setup, you’ll notice a few new roles and channels in your server.
+
+- **Jailed** - Used to restrict users from all channels except the `#jail` channel.
+  - The jailed role cannot be renamed since it’s found by its name.
+
+<Info>
+    The `#jail-log` Is the channel where all the jail logs goes to, The #jail channel is where users jailed by the jail command are restricted to.
+</Info>
+
+
+# Setting up custom roles
+
+It’s recommended to use custom commands like `staff` and `admin` to give users their roles instead of assigning them manually. This makes managing roles easier and more consistent.
+
+<CodeGroup>
+
+```javascript Syntax
+?customrole create <name> <role>
+```
+
+```javascript Example
+?customrole create Admin @admin
+```
+
+</CodeGroup>
+
+<Frame>
+  <img src="/images/cr.png" />
+</Frame>

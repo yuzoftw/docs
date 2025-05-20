@@ -23,6 +23,8 @@
             "group": "Security",
             "pages": [
               "security/antinuke",
+              "security/raidmode",
+              "security/moderation",
               "security/fakeperms",
               "security/code",
               "security/images",
@@ -30,10 +32,17 @@
               "security/navigation",
               "security/reusable-snippets"
             ]
+          },
+          {
+            "group": "Server Configuration",
+            "pages": [
+              "security/role"
+            ]
           }
         ]
       }
     ]
+
   },
   "navbar": {
     "links": [
