@@ -25,12 +25,7 @@
               "security/antinuke",
               "security/raidmode",
               "security/moderation",
-              "security/fakeperms",
-              "security/code",
-              "security/images",
-              "security/settings",
-              "security/navigation",
-              "security/reusable-snippets"
+              "security/fakeperms"
             ]
           },
           {
