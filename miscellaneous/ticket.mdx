@@ -1,0 +1,74 @@
+---
+title: 'Ticket'
+description: 'Setup ticketing for your server'
+icon: 'ticket'
+---
+
+
+# Category 
+Setup a category where all the tickets will be created.
+
+<CodeGroup>
+
+  ```javascript Syntax
+  ?ticket category <topic> <categoryID>
+  ```
+  ```javascript Example
+  ?ticket cateogry Support 2482582852812
+  ```
+
+</CodeGroup>
+
+# Support Role
+Select a support role for the ticket system. This role can close tickets, view them and add/remove members from the ticket.
+
+<CodeGroup>
+
+  ```javascript Syntax
+  ?ticket support <topic> <role>
+  ```
+  ```javascript Example
+  ?ticket support Support @TicketsManager
+  ```
+
+</CodeGroup>
+
+# Ticket Topics
+Create multiple ticket topics to have a better overview of your tickets.
+
+<CodeGroup>
+
+  ```javascript Syntax
+  ?ticket topic add <name>
+  ```
+  ```javascript Example
+  ?ticket topic add Support
+  ```
+
+</CodeGroup>
+
+# Ticket Create embed
+To setup a ticket create embed use `ticket setup` command.
+
+
+<CodeGroup>
+  ```javascript Example
+  ?ticket setup
+  ```
+
+</CodeGroup>
+
+If you don't want the default ticketing embed, you can create one yourself. Go to [Embed Builder](https://nyxie.space/embed).
+
+After you have finished Customizing your embed, click on "Generate Code" button and copy it with "Copy Code" button
+
+<CodeGroup>
+
+  ```javascript Syntax
+  ?ticket setup [code]
+  ```
+  ```javascript Example
+  ?ticket setup {embed}$v{color: #800080}$v{title: Ticket setup}$v{description: Create a ticket using the button below}
+  ```
+
+</CodeGroup>

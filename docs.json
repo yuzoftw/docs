@@ -33,7 +33,14 @@
             "pages": [
               "server/autorole",
               "server/voice",
-              "server/welcome"
+              "server/welcome",
+              "server/logs"
+            ]
+          },
+          {
+            "group": "Miscellaneous",
+            "pages": [
+              "miscellaneous/ticket"
             ]
           }
         ]
