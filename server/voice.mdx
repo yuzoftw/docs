@@ -1,0 +1,129 @@
+---
+title: 'Voicemaster'
+description: 'View the documentation about voicemaster'
+icon: 'podcast'
+---
+
+# VoiceMaster
+Create temporary voice channels which can be customized to your liking.
+
+<Tip>
+The created channels can be moved and renamed to your liking.
+</Tip>
+
+<Frame>
+  <img src="/images/vm1.png" />
+</Frame>
+
+
+# What is the menu channel?
+The `#menu` channel will contain an embed with buttons that allow members to customize their temporary voice channel. This channel should be locked to keep the embed message at the top of the channel.
+
+
+<Frame>
+  <img src="/images/voicemaster.png" />
+</Frame>
+
+
+
+# What is the Create channel?
+The Create channel is where members will join to create their temporary voice channel. This channel is required for the **VoiceMaster** system to work.
+
+
+
+<video
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="w-full aspect-video"
+  src="https://cdn.discordapp.com/attachments/1254328664842043402/1374348764462059601/j2c.mp4?ex=682db987&is=682c6807&hm=545ee46d7e2eafb3f7411c1a148030bf8d14200f9bab92555d1cb41826c468bd&"
+></video>
+
+# Customizing new voice channels
+
+You can customize what the temporary voice channels look like when they’re created.
+
+The following commands are subcommands of the **voicemaster** command.
+
+<Accordion title="Redirecting Voice Channels">
+  Redirect voice channels to a specific category.
+  <CodeGroup>
+
+  ```javascript Syntax
+  ?voicemaster category <categoryID>
+  ```
+  ```javascript Example
+  ?voicemaster category 2252521529589215
+  ```
+
+  </CodeGroup>
+</Accordion>
+<Accordion title="Customize the generated channel name">
+  <Info>
+  The name can use the `{user.display_name}` variable.
+  </Info>
+  <CodeGroup>
+
+  ```javascript Syntax
+  ?voicemaster name <name>
+  ```
+  ```javascript Example
+  ?voicemaster name {user.display_name}'s Lounge
+  ```
+
+  </CodeGroup>
+</Accordion>
+
+# Renaming your voice channel
+You can use the `voicemaster rename` command to change the name of your voice channel.
+<CodeGroup>
+
+  ```javascript Syntax
+  ?voicemaster rename <name>
+  ```
+  ```javascript Example
+  ?voicemaster rename My lounge
+  ```
+
+</CodeGroup>
+
+
+# Limiting the number of members
+You can use the `voicemaster limit` command to set a limit on the number of members that can join your voice channel.
+<CodeGroup>
+
+  ```javascript Syntax
+  ?voicemaster limit <limit>
+  ```
+  ```javascript Example
+  ?voicemaster limit 27
+  ```
+
+</CodeGroup>
+
+
+
+# Making your voice channel private
+You can lock & hide your voice channel with the following commands.
+
+- `voicemaster lock` - Prevents anyone from joining the voice channel.
+  - `voicemaster unlock` - Allows anyone join the voice channel.
+- `voicemaster hide` - Hides the voice channel from the channel list.
+  - `voicemaster unhie` - Reveals the voice channel in the channel list.
+
+# Related Command
+
+<Accordion title="Transferring ownership">
+  You can use the `voicemaster transfer` command to transfer ownership of a voice channel to another member.
+  <CodeGroup>
+
+  ```javascript Syntax
+  ?voicemaster transfer <member>
+  ```
+  ```javascript Example
+  ?voicemaster transfer @termed
+  ```
+
+  </CodeGroup>
+</Accordion>

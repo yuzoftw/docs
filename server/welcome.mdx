@@ -1,0 +1,77 @@
+---
+title: 'Welcome'
+description: 'View the documentation about welcome messages'
+icon: 'user-plus'
+---
+
+
+# Creating a welcome message
+
+<Tip>
+The `code` parameter can be raw text or an embed with dynamic variables.
+</Tip>
+
+<CodeGroup>
+
+  ```javascript Syntax
+  ?greet message <code>
+  ```
+  ```javascript Example
+  ?greet message {embed}$v{content: Welcome to {server.name}}
+  ```
+
+</CodeGroup>
+
+<Frame>
+  <img src="/images/welcome.png" />
+</Frame>
+
+# Setup a welcome channel
+You can setup the welcome message channel with the `greet channel` command.
+  <CodeGroup>
+
+  ```javascript Syntax
+  ?greet channel <channel>
+  ```
+  ```javascript Example
+  ?greet channel #greet
+  ```
+
+  </CodeGroup>
+
+<Frame>
+  <img src="/images/channelgreet.png" />
+</Frame>
+
+# Remove the welcome channel
+You can remove the welcome message channel with the `greet channel` command.
+  <CodeGroup>
+
+  ```javascript Syntax
+  ?greet channel <channel>
+  ```
+  ```javascript Example
+  ?greet channel #greet
+  ```
+
+  </CodeGroup>
+
+<Frame>
+  <img src="/images/channelgreet.png" />
+</Frame>
+
+# Related Command
+
+<Accordion title="Test the welcome message">
+  You can test the welcome message using `greet test` command
+  <CodeGroup>
+
+  ```javascript Syntax
+  ?greet test <channel>
+  ```
+  ```javascript Example
+  ?greet test #setup
+  ```
+
+  </CodeGroup>
+</Accordion>

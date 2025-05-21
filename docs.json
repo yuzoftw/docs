@@ -31,7 +31,9 @@
           {
             "group": "Server Configuration",
             "pages": [
-              "security/role"
+              "server/autorole",
+              "server/voice",
+              "server/welcome"
             ]
           }
         ]
