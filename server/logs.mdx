@@ -1,0 +1,61 @@
+---
+title: 'Logging'
+description: 'Log events in your server'
+icon: 'book-open'
+---
+
+
+# Information
+**Logging** helps you keep track of key events happening in your server. It’s a useful tool for monitoring activity, ensuring transparency, and maintaining a safe community environment.
+
+
+# Setup all logging channels
+You can use the `logging setup` command to setup all the logging events for the server
+
+<CodeGroup>
+
+  ```javascript Syntax
+  ?logs setup
+  ```
+  ```javascript Example
+  ?logs setup
+  ```
+
+</CodeGroup>
+
+# Adding a logging event
+You can add a logging event using the `logging add` command.
+
+<Info>
+Available logging events are `messages`, `member`, `role`, `channel`, `moderation`, `guild` and `voice`.
+</Info>
+
+<CodeGroup>
+
+  ```javascript Syntax
+  ?logs add <event> <channel>
+  ```
+  ```javascript Example
+  ?logs add messages #msg-logs
+  ```
+
+</CodeGroup>
+
+
+# Removing a logging event
+You can add a logging event using the `logging remove` command.
+
+<CodeGroup>
+
+  ```javascript Syntax
+  ?logs remove <event> 
+  ```
+  ```javascript Example
+  ?logs remvoe messages 
+  ```
+
+</CodeGroup>
+
+
+# View all enabled logging events
+You can use the `logs config` command to view all enabled logging & their channels.
