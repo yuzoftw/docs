@@ -1,42 +1,84 @@
----
-title: Introduction
-description: "Learn how to set up nyxie in your server or enhance your everyday use with commands & more."
-icon: "book"
----
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "willow",
+  "name": "Nyixe",
+  "colors": {
+    "primary": "#800080",
+    "light": "#800080",
+    "dark": "#800080"
+  },
+  "favicon": "favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "index"
+            ]
+          },
+          {
+            "group": "Security",
+            "pages": [
+              "security/antinuke",
+              "security/raidmode",
+              "security/moderation",
+              "security/fakeperms"
+            ]
+          },
+          {
+            "group": "Server Configuration",
+            "pages": [
+              {
+                "group": "Roles",
+                "icon": "users",
+                "pages": ["roles/autorole", "roles/buttonrole"]
+              },
+              "server/voice",
+              "server/welcome",
+              "server/logs"
+            ]
+          },
+          {
+            "group": "Miscellaneous",
+            "pages": [
+              "miscellaneous/ticket"
+            ]
+          },
+          {
+            "group": "Resources",
+            "pages": [
+              {
+                "group": "Embeds",
+                "icon": "scroll",
+                "pages": ["resources/embeds", "resources/variables"]
+              }
+            ]
+          }
+        ]
+      }
+    ]
 
-
-
-## Setting up
-
-The first step to world-class documentation is setting up your editing environments.
-
-<CardGroup cols={2}>
-  <Card
-    title="Security Setup"
-    icon="hammer"
-    href="https://nyxie.mintlify.app/security/antinuke"
-  >
-    Configure nyxie's settings for your server
-  </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/content/components/accordions"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/customers"
-  >
-    Check out our showcase of our favorite documentation
-  </Card>
-</CardGroup>
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "https://discord.gg/zaXsZF7V6e"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Invite",
+      "href": "https://nyxie.space/discord-redirect"
+    }
+  },
+  "footer": {
+    "socials": {
+      "discord": "https://discord.gg/zaXsZF7V6e",
+      "website": "https://nyxie.space/"
+    }
+  }
+}

@@ -1,0 +1,100 @@
+---
+title: 'Embeds'
+description: 'Guide for the fundamentals of scripting embeds.'
+icon: 'code'
+---
+
+
+<Tip>
+We recommend using our [embed builder](https://nyxie.space/embed) instead of scripting the embeds manually as it is easier
+</Tip>
+
+# Framework
+
+
+In an embed, each setting is defined as a key-value pair, separated by a colon. For example, to set the title, you would write: `{title: hello {user}}`. Here, `{user}` acts as a dynamic placeholder that will be replaced by the user's display name.
+
+- `{` marks the start of a parameter.
+- `:` separates the parameter's key from its value.
+- `$v` separates multiple parameters.
+- `}` marks the end of a parameter.
+
+# Parameters
+
+- **url** — The URL for the embed. Example: `https://...`
+- **color** — The color of the embed in hex format. Example: `#FFFFFF`
+- **title** — The title text of the embed. Example: `hello {user}`
+- **description** — The description text of the embed. Example: `hello {user}`
+- **image** — URL of the embed’s main image. Example: `https://...`
+- **thumbnail** — URL of the embed’s thumbnail image. Example: `https://...`
+
+# Parameters with multiple arguments
+
+Some parameters require multiple values or options. In these cases, separate each argument with `&&` within the same parameter block.
+
+
+<Accordion title="Author">
+  - `name` - The author’s name.
+  - `icon` - The author’s icon. (Optional)
+  - `url` - The author’s URL. (Optional)
+
+```
+{author: name: name && icon: icon && url: url}
+{author: name: {user.mention} && icon: {user.avatar} && url: https://discord.gg/zaXsZF7V6e}
+```
+</Accordion>
+<Accordion title="Footer">
+  - `name` - The footer text.
+  - `icon` - The footer icon. (Optional)
+
+```
+{footer: text: text && icon: icon}
+{footer: text: {user.name} && icon: {user.avatar}}
+```
+</Accordion>
+<Accordion title="Field">
+  - `name` - The field name.
+  - `icon` - The field value.
+  - `inline` - The field inline. 
+
+```
+{field: {name: rawr && value: rawr}}
+{field: {name: rawr && value: rawr && inline: true}}
+```
+</Accordion>
+<Accordion title="Button">
+  - `label` - The button label.
+  - `emoji` - The button emoji.
+  - `url` - The button URL.
+
+```
+{button: label: label && emoji: emoji && url: url}
+{button: label: name && emoji: emoji && url: https://discord.gg/zaXsZF7V6e}
+```
+</Accordion>
+
+# Placeholders
+
+<Info>
+You can view the available variables by clicking [here](/resources/path/to/variables).
+</Info>
+
+You can use dynamic placeholders in your embeds to display user-specific information. For example, {user.dispaly_name} will be replaced with the user’s display name.
+
+```
+{embed}$v{content: Welcome! {user.mention}}$v{description: {server.name}}
+```
+<Frame>
+  <img src="/images/ce.png" />
+</Frame>
+
+
+
+# FAQ
+
+## How can I add a new lines in my embed description?
+
+If you want to add a new line in your embed description, you can press `SHIFT` + `ENTER` to create a new line in the embed.
+
+## Why isn’t my embed code working for some commands?
+

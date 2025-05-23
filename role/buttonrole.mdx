@@ -1,0 +1,67 @@
+---
+title: 'Button Roles'
+description: 'Allow your members to assign themselves roles by clicking a button.'
+icon: 'square-check'
+---
+
+
+# What are button roles?
+Button roles are roles assigned to members when they click a button on a message or embed. They are useful for letting members self-assign unique roles or verify themselves easily.
+
+# Create a button role
+
+You can add a button role by using the `buttonrole add` command.
+
+<Tip>
+You can create multiple button roles for a single message.
+</Tip>
+<Info>
+Button roles can only be added to messages or embeds sent by nyixe. Learn how to create an embed here!
+</Info>
+<CodeGroup>
+
+  ```javascript Syntax
+  ?buttonrole add <messagelink> <label> <role> <emoji> <style>
+  ```
+  ```javascript Example
+  ?buttonrole add .../channels/... Verified @Verified ✅ success
+  ```
+
+</CodeGroup>
+
+
+<video
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="w-full aspect-video"
+  src="https://cdn.discordapp.com/attachments/1254328664842043402/1375377973078921276/lv_0_20250523131045.mp4?ex=6831780e&is=6830268e&hm=0f5c237c374e4b3723d5c6b158cbe818ea21825c9f4edf079e854769a4f3ebcf&"
+></video>
+
+
+# Remove a button role
+
+To remove a specific button role, use the `buttonrole remove` command.
+
+<CodeGroup>
+
+  ```javascript Syntax
+  ?buttonrole remove <messagelink> <label>
+  ```
+  ```javascript Example
+  ?buttonrole remove .../channels/... Verified
+  ```
+
+</CodeGroup>
+
+# View Button Roles
+
+To see all button roles configured in your server, use the `buttonrole list` command. 
+
+<CodeGroup>
+
+  ```javascript Example
+  ?buttonrole list
+  ```
+</CodeGroup>
