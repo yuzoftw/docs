@@ -34,7 +34,7 @@
               {
                 "group": "Roles",
                 "icon": "users",
-                "pages": ["roles/autorole", "roles/buttonrole"]
+                "pages": ["role/autorole", "role/buttonrole"]
               },
               "server/voice",
               "server/welcome",
