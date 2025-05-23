@@ -53,7 +53,7 @@
               {
                 "group": "Embeds",
                 "icon": "scroll",
-                "pages": ["resources/embeds", "resources/variables"]
+                "pages": ["resources/embeds", "resources/placeholders"]
               }
             ]
           }
