@@ -31,7 +31,11 @@
           {
             "group": "Server Configuration",
             "pages": [
-              "server/autorole",
+              {
+                "group": "Roles",
+                "icon": "users",
+                "pages": ["roles/autorole", "roles/buttonrole"]
+              },
               "server/voice",
               "server/welcome",
               "server/logs"
@@ -41,6 +45,16 @@
             "group": "Miscellaneous",
             "pages": [
               "miscellaneous/ticket"
+            ]
+          },
+          {
+            "group": "Resources",
+            "pages": [
+              {
+                "group": "Embeds",
+                "icon": "scroll",
+                "pages": ["resources/embeds", "resources/variables"]
+              }
             ]
           }
         ]
