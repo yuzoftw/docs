@@ -1,0 +1,62 @@
+---
+title: 'Button Message'
+description: 'Add button responses to messages'
+icon: 'messages'
+---
+
+# Create a button response
+
+<Tip>
+You can create multiple button responses for a single message.
+</Tip>
+<Info>
+Button roles can only be added to messages or embeds sent by nyixe. Learn how to create an embed [here](https://nyxie.mintlify.app/resources/embeds)!
+</Info>
+<CodeGroup>
+
+  ```javascript Syntax
+  ?buttonmessage add <messageURL> <label> <message> [style] [emoji] 
+  ```
+  ```javascript Example
+  ?buttonmessage add .../channels/... Info {embed}$v{description: Information!!!} blue ℹ️ 
+  ```
+
+</CodeGroup>
+
+<Info>
+If you don't want an emoji on the button, leave it blank instead of typing 'None'. Similarly, using 'None' for the style will default the button to gray.
+</Info>
+
+# Edit a button response
+
+You can edit a specific button response by using the `buttonmessage edit` command.
+
+<Tip>
+You can use the `buttonmessage list` command to see all existing button roles in your server.
+</Tip>
+
+<CodeGroup>
+
+  ```javascript Syntax
+  ?buttonmessage edit <button_id> <message>
+  ```
+  ```javascript Example
+  ?buttonmessage add SGJuSF2 {embed}$v{description: Hello!}
+  ```
+
+</CodeGroup>
+
+# Remove a button response
+
+You can remove a specific button message by using the `buttonmessage remove` command.
+
+<CodeGroup>
+
+  ```javascript Syntax
+  ?buttonmessage remove <button_id>
+  ```
+  ```javascript Example
+  ?buttonmessage remove SGJuSF2
+  ```
+
+</CodeGroup>

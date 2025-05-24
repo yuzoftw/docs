@@ -34,10 +34,14 @@
               {
                 "group": "Roles",
                 "icon": "users",
-                "pages": ["role/autorole", "role/buttonrole"]
+                "pages": ["roles/autorole", "roles/buttonrole"]
+              },
+              {
+                "group": "Messages",
+                "icon": "message",
+                "pages": ["server/welcome", "server/buttonmessage", "server/autoresponder"]
               },
               "server/voice",
-              "server/welcome",
               "server/logs"
             ]
           },
@@ -51,7 +55,7 @@
             "group": "Resources",
             "pages": [
               {
-                "group": "Embeds",
+                "group": "Scripting",
                 "icon": "scroll",
                 "pages": ["resources/embeds", "resources/placeholders"]
               }
