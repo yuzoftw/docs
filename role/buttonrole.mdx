@@ -21,10 +21,10 @@ Button roles can only be added to messages or embeds sent by nyixe. Learn how to
 <CodeGroup>
 
   ```javascript Syntax
-  ?buttonrole add <messagelink> <label> <role> <emoji> <style>
+  ?buttonrole add <messagelink> <label> <role> <style> <emoji> 
   ```
   ```javascript Example
-  ?buttonrole add .../channels/... Verified @Verified ✅ success
+  ?buttonrole add .../channels/... Verified @Verified green ✅
   ```
 
 </CodeGroup>
@@ -43,14 +43,17 @@ Button roles can only be added to messages or embeds sent by nyixe. Learn how to
 # Remove a button role
 
 To remove a specific button role, use the `buttonrole remove` command.
+<Info>
+To view to button codes use `buttonrole list` command
+</Info>
 
 <CodeGroup>
 
   ```javascript Syntax
-  ?buttonrole remove <messagelink> <label>
+  ?buttonrole remove <code>
   ```
   ```javascript Example
-  ?buttonrole remove .../channels/... Verified
+  ?buttonrole remove G242sg5T
   ```
 
 </CodeGroup>
