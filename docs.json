@@ -7,6 +7,9 @@
     "light": "#800080",
     "dark": "#800080"
   },
+  "icons": {
+    "library": "lucide"
+  },
   "favicon": "favicon.svg",
   "navigation": {
     "tabs": [
@@ -38,7 +41,7 @@
               },
               {
                 "group": "Messages",
-                "icon": "message",
+                "icon": "message-square",
                 "pages": ["server/welcome", "server/buttonmessage", "server/autoresponder"]
               },
               "server/voice",
@@ -48,7 +51,8 @@
           {
             "group": "Miscellaneous",
             "pages": [
-              "miscellaneous/ticket"
+              "miscellaneous/ticket",
+              "miscellaneous/giveaway"
             ]
           },
           {
@@ -64,7 +68,6 @@
         ]
       }
     ]
-
   },
   "navbar": {
     "links": [
