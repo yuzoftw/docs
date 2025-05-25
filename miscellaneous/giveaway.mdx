@@ -1,5 +1,144 @@
 ---
-title: 'Ticket'
-description: 'Setup ticketing for your server 🎉'
+title: 'Giveaways'
+description: 'Setup start giveaways'
 icon: 'party-popper'
 ---
+
+
+# Start a Giveaway
+
+You can start a giveaway with the `giveaway start` command.
+<CodeGroup>
+
+  ```javascript Syntax
+  ?giveaway start <duration> <winners> <prize>
+  ```
+  ```javascript Example
+  ?giveaway start 14h 1 Nitro
+  ```
+
+</CodeGroup>
+
+# Changing the details
+
+<Accordion title="Change the host">
+  You can change the giveaway host using `giveaway edit prize` command
+    <CodeGroup>
+
+    ```javascript Syntax
+    ?giveaway edit host <messageID> <host>
+    ```
+    ```javascript Example
+    ?giveaway edit host 225252525218248 @fugitive
+    ```
+
+    </CodeGroup>
+</Accordion>
+<Accordion title="Change the prize">
+  You can change the giveaway prize using `giveaway edit prize` command
+    <CodeGroup>
+
+    ```javascript Syntax
+    ?giveaway edit prize <messageID> <prize>
+    ```
+    ```javascript Example
+    ?giveaway edit prize 225252525218248 Nitro Booster
+    ```
+
+    </CodeGroup>
+</Accordion>
+<Accordion title="Change the duration">
+  You can change the giveaway duration using `giveaway edit duration` command
+    <CodeGroup>
+
+    ```javascript Syntax
+    ?giveaway edit duration <messageID> <duration>
+    ```
+    ```javascript Example
+    ?giveaway edit duration 225252525218248 10m
+    ```
+
+    </CodeGroup>
+</Accordion>
+
+<Accordion title="Change the winner count">
+  You can change the amount of winners using `giveaway edit winners` command
+    <CodeGroup>
+
+    ```javascript Syntax
+    ?giveaway edit winners <messageID> <winners>
+    ```
+    ```javascript Example
+    ?giveaway edit winners 225252525218248 3
+    ```
+
+    </CodeGroup>
+</Accordion>
+
+
+# Cancel a giveaway
+
+You can cancel a giveaway with the `giveaway cancel` command.
+
+<Warning>
+This will not choose any winners and will delete the giveaway message
+</Warning>
+
+<CodeGroup>
+
+  ```javascript Syntax
+  ?giveaway cancel <messageID>
+  ```
+  ```javascript Example
+  ?giveaway cancel 225252525218248
+  ```
+
+</CodeGroup>
+
+
+# End a giveaway
+
+You can end a giveaway before the time with the `giveaway end` command.
+
+<CodeGroup>
+
+  ```javascript Syntax
+  ?giveaway end <messageID>
+  ```
+  ```javascript Example
+  ?giveaway end 225252525218248
+  ```
+
+</CodeGroup>
+
+# Reroll a giveaway
+
+You can reroll the giveaway winners with the `giveaway reroll` command.
+
+<CodeGroup>
+
+  ```javascript Syntax
+  ?giveaway reroll <messageID>
+  ```
+  ```javascript Example
+  ?giveaway reroll 225252525218248
+  ```
+
+</CodeGroup>
+
+# View a list of giveaways
+
+<Info>
+Using the `giveaway list` command you can view all the ended and active giveaways
+</Info>
+
+<CodeGroup>
+
+  ```javascript Syntax
+  ?giveaway list 
+  ```
+  ```javascript Example
+  ?giveaway list
+  ```
+
+</CodeGroup>
