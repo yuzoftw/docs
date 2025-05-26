@@ -1,0 +1,68 @@
+---
+title: 'Words'
+description: 'Guide to setting up auto moderation words for your server.'
+icon: 'Type'
+---
+
+# Enable Word Filter
+
+This will block users from sending saved words in the server
+
+<CodeGroup>
+
+```javascript Example
+?automod words enable
+```
+
+</CodeGroup>
+
+# Setup blacklist words
+
+
+<CodeGroup>
+
+```javascript Syntax
+?automod words add <word>
+```
+
+```javascript Example
+?automod words add fuck
+```
+
+</CodeGroup>
+
+
+# Change the target of the auto moderation words
+
+<Info>
+The available targets are `timeout` & `delete` 
+</Info>
+
+<CodeGroup>
+
+```javascript Syntax
+?automod words target <action>
+```
+
+```javascript Example
+?automod words target timeout
+```
+
+</CodeGroup>
+
+
+# Whitelist channels, roles and users from the filter
+
+```
+?automod words ignore add <user>
+?automod words ignore add @fugitive
+```
+
+```
+?automod words ignore remove <user>
+?automod words ignore remove @fugitive
+```
+
+```
+?automod words list
+```

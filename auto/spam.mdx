@@ -1,0 +1,47 @@
+---
+title: 'Spam'
+description: 'Guide to setting up auto moderation spam for your server.'
+icon: 'message-circle'
+---
+
+# Enable the filter
+
+This will block users from sending multiple messages at a time
+
+<CodeGroup>
+
+```javascript Example
+?automod spam enable
+```
+
+</CodeGroup>
+
+Change the timeout minutes for the filter
+
+<CodeGroup>
+
+```javascript Syntax
+?automod spam timeout <time>
+```
+
+```javascript Example
+?automod spam timeout 5
+```
+
+</CodeGroup>
+
+# Whitelist channels, roles and users from the filter
+
+```
+?automod spam ignore add <user>
+?automod spam ignore add @fugitive
+```
+
+```
+?automod spam ignore remove <user>
+?automod spam ignore remove @fugitive
+```
+
+```
+?automod spam list
+```

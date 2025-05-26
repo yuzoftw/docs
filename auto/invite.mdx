@@ -1,0 +1,50 @@
+---
+title: 'Invite'
+description: 'Guide to setting up auto moderation invites for your server.'
+icon: 'download'
+---
+
+# Enable the filter
+
+This will block users from sending disord server invite links in the server
+
+
+<CodeGroup>
+
+```javascript Example
+?automod invites enable
+```
+
+</CodeGroup>
+
+Change the timeout minutes for the filter
+
+
+
+<CodeGroup>
+
+```javascript Syntax
+?automod invites timeout <time>
+```
+
+```javascript Example
+?automod invites timeout 5
+```
+
+</CodeGroup>
+
+# Whitelist channels, roles and users from the filter
+
+```
+?automod invites ignore add <user>
+?automod invites ignore add @fugitive
+```
+
+```
+?automod invites ignore remove <user>
+?automod invites ignore remove @fugitive
+```
+
+```
+?automod invites list
+```

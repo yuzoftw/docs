@@ -26,6 +26,11 @@
             "group": "Security",
             "pages": [
               "security/antinuke",
+              {
+                "group": "Auto moderation",
+                "icon": "shield",
+                "pages": ["auto/invite", "auto/words", "auto/spam", "auto/link"]
+              },
               "security/raidmode",
               "security/moderation",
               "security/fakeperms"
