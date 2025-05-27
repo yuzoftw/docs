@@ -1,0 +1,53 @@
+---
+title: 'Custom roles'
+description: 'Guide to setup custom role commands.'
+icon: 'cog'
+---
+
+# What are custom roles? 
+Custom roles allow you to create your own commands that automatically assign designated roles to users. This makes role management faster and more efficient.
+
+# Setting up custom roles
+
+<Tip>
+It’s recommended to use custom commands like `staff` and `admin` to assign roles, rather than giving them manually. This approach keeps role management easie & more consistent.
+</Tip>
+<CodeGroup>
+
+```javascript Syntax
+?customrole create <name> <role>
+```
+
+```javascript Example
+?customrole create Admin @admin
+```
+
+</CodeGroup>
+
+<Frame>
+  <img src="/images/cr.png" />
+</Frame>
+
+# Remove custom roles
+To remove a custom role use the `customrole delete` command.
+<CodeGroup>
+
+```javascript Syntax
+?customrole delete <name> 
+```
+
+```javascript Example
+?customrole delete Admin 
+```
+
+</CodeGroup>
+
+# View custom roles
+To view the list of existing custom roles in the server use the `customrole list` command.
+<CodeGroup>
+
+```javascript Example
+?customrole list 
+```
+
+</CodeGroup>

@@ -42,7 +42,7 @@
               {
                 "group": "Roles",
                 "icon": "users",
-                "pages": ["roles/autorole", "roles/buttonrole"]
+                "pages": ["roles/autorole", "roles/buttonrole", "roles/cr"]
               },
               {
                 "group": "Messages",
